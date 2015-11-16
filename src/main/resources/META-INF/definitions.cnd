@@ -1,0 +1,11 @@
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<famix = 'http://fontawesome.io/jahia/mix/1.0'>
+<mix = 'http://www.jcp.org/jcr/mix/1.0'>
+
+
+[jnt:slideItItem] > jnt:content, famix:faIcon, mix:title
+ + * (jmix:droppableContent) = jmix:droppableContent
+
+[jnt:slideIt] > jnt:content, jmix:siteComponent orderable
++ * (jnt:slideItItem)

@@ -1,0 +1,44 @@
+.slider-button-large{
+    background: #00A0E3;
+    position:fixed;
+    width:108px;
+    height:108px;
+    right:0px;
+    color: white;
+    padding:8px;
+    cursor: pointer;
+    top: 200px;
+}
+
+.floatingButtonsFrame{
+    background: #f9f9f9;
+    border-color: #ddd;
+    border-width: 1px;
+    border-style: solid;
+    position:fixed;
+    right:0px;
+    top: 200px;
+}
+
+.slider-button{
+    cursor: pointer;
+    padding:12px;
+}
+.slider-button span {
+    display: none;
+}
+.dialog{
+    position:fixed;
+    height:228px;
+    background: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ddd;
+    width:400px;
+    right:0px;
+    top: 150px;
+    margin-right: -400px;
+}
+.dvCallDialog{
+    height: 240px;
+}
