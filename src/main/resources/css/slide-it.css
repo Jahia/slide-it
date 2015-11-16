@@ -29,16 +29,14 @@
 }
 .dialog{
     position:fixed;
-    height:228px;
+    /*height:228px;*/
     background: white;
     border-style: solid;
     border-width: 1px;
     border-color: #ddd;
     width:400px;
-    right:0px;
+    right:-20px;
     top: 150px;
     margin-right: -400px;
-}
-.dvCallDialog{
-    height: 240px;
+    padding: 10px;
 }
