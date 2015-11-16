@@ -19,5 +19,5 @@
 <%--@elvariable id="url" type="org.jahia.services.render.URLGenerator"--%>
 
 <c:set var="icon" value="${currentNode.properties['faIcon'].string}"/>
-<div class="slider-button" id="${currentNode.identifier}"><i class="fa ${icon} fa-2x"><span>${currentNode.displayableName}</span></i></div>
+<div class="slider-button" id="${currentNode.identifier}"><i class="fa ${icon}"><span>${currentNode.displayableName}</span></i></div>
 

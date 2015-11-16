@@ -12,9 +12,6 @@
 
 .floatingButtonsFrame{
     background: #f9f9f9;
-    border-color: #ddd;
-    border-width: 1px;
-    border-style: solid;
     position:fixed;
     right:0px;
     top: 200px;
@@ -35,8 +32,11 @@
     border-width: 1px;
     border-color: #ddd;
     width:400px;
-    right:-20px;
+    right:-10px;
     top: 150px;
     margin-right: -400px;
     padding: 10px;
+}
+.dismissButton {
+    cursor: pointer; cursor: hand;
 }

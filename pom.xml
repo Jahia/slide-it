@@ -83,7 +83,7 @@
     <groupId>org.jahia.modules</groupId>
     <artifactId>slide-it</artifactId>
     <name>Slide It</name>
-    <version>1.0-SNAPSHOT</version>    
+    <version>1.0-SNAPSHOT</version>
     <packaging>bundle</packaging>
     <description>This is the custom module (Slide It) for running on a Digital Factory server.</description>
 

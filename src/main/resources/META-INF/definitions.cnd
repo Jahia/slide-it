@@ -3,6 +3,12 @@
 <famix = 'http://fontawesome.io/jahia/mix/1.0'>
 <mix = 'http://www.jcp.org/jcr/mix/1.0'>
 
+[jmix:slideItAdvancedSettings] mixin
+ extends = jnt:slideIt
+ itemtype = content
+ - bgcolor (string) = '#00A0E3'
+ - top (string) = '200px'
+
 
 [jnt:slideItItem] > jnt:content, famix:faIcon, mix:title
  + * (jmix:droppableContent) = jmix:droppableContent

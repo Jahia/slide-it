@@ -22,19 +22,35 @@
 
 <c:set var="slideItItems" value="${jcr:getChildrenOfType(currentNode, 'jnt:slideItItem')}"/>
 
-
-
-<!-- Floating buttons -->
-<div class="floatingButtonsFrame center">
+<c:set var="displaySlideIt" value="true"/>
+<c:if test="${renderContext.editMode && renderContext.mainResource.node.path ne renderContext.site.home.path}">
+    <c:set var="displaySlideIt" value="false"/>
+</c:if>
+<c:if test="${jcr:isNodeType(currentNode, 'jmix:slideItAdvancedSettings')}">
+    <c:set var="bgcolor" value="${currentNode.properties.bgcolor.string}"/>
+    <c:set var="top" value="${currentNode.properties.top.string}"/>
+    <c:if test="${empty bgcolor}">
+        <c:set var="bgcolor" value="#00A0E3"/>
+    </c:if>
+    <c:if test="${empty top}">
+        <c:set var="top" value="200px"/>
+    </c:if>
+    <c:set var="style"> style="background-color:${bgcolor};top=${top}"</c:set>
+</c:if>
+<c:if test="${displaySlideIt}">
+    <div class="floatingButtonsFrame center"${style}>
+        <c:forEach items="${slideItItems}" var="slideItItem">
+            <template:module node="${slideItItem}" nodeTypes="jnt:slideItItem" editable="true" view="button"/>
+        </c:forEach>
+    </div>
     <c:forEach items="${slideItItems}" var="slideItItem">
-        <template:module node="${slideItItem}" nodeTypes="jnt:slideItItem" editable="true" view="button"/>
+        <template:module node="${slideItItem}" nodeTypes="jnt:slideItItem" editable="true" view="dialog"/>
     </c:forEach>
-</div>
-<c:forEach items="${slideItItems}" var="slideItItem">
-    <template:module node="${slideItItem}" nodeTypes="jnt:slideItItem" editable="true" view="dialog"/>
-</c:forEach>
+    <c:if test="${renderContext.editMode}">
+        <template:module path="*" nodeTypes="jnt:slideItItem"/>
+    </c:if>
+</c:if>
 
-<template:module path="*" nodeTypes="jnt:slideItItem"/>
 
 <c:if test="${! renderContext.editMode}">
     <template:addResources type="inline">
