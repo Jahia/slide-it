@@ -1,20 +1,10 @@
-.slider-button-large{
-    background: #00A0E3;
-    position:fixed;
-    width:108px;
-    height:108px;
-    right:0px;
-    color: white;
-    padding:8px;
-    cursor: pointer;
-    top: 200px;
-}
-
 .floatingButtonsFrame{
-    background: #f9f9f9;
+    background: white;
     position:fixed;
     right:0px;
     top: 200px;
+    border: 1px solid #ddd;
+    border-right-width: 0;
 }
 
 .slider-button{
@@ -36,7 +26,9 @@
     top: 150px;
     margin-right: -400px;
     padding: 10px;
+    z-index: 1000;
 }
 .dismissButton {
     cursor: pointer; cursor: hand;
+    color: #bdbdbd;
 }
