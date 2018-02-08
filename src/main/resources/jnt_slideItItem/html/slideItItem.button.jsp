@@ -17,6 +17,8 @@
 <%--@elvariable id="renderContext" type="org.jahia.services.render.RenderContext"--%>
 <%--@elvariable id="currentResource" type="org.jahia.services.render.Resource"--%>
 <%--@elvariable id="url" type="org.jahia.services.render.URLGenerator"--%>
+<template:addResources type="javascript" resources="fa-v4-shims.min.js"/>
+<template:addResources type="javascript" resources="fontawesome-all.min.js"/>
 
 <c:set var="icon" value="${currentNode.properties['faIcon'].string}"/>
 <div class="slider-button" id="${currentNode.identifier}"><i class="fa ${icon}"><span>${currentNode.displayableName}</span></i></div>
