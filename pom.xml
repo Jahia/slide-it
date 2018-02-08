@@ -78,7 +78,7 @@
     <parent>
         <artifactId>jahia-modules</artifactId>
         <groupId>org.jahia.modules</groupId>
-        <version>7.1.0.0</version>
+        <version>7.2.0.0</version>
     </parent>
     <groupId>org.jahia.modules</groupId>
     <artifactId>slide-it</artifactId>
@@ -88,9 +88,11 @@
     <description>This is the custom module (Slide It) for running on a Digital Factory server.</description>
 
     <scm>
-        <connection>scm:dummy:uri</connection>
-        <developerConnection>scm:dummy:uri</developerConnection>
+        <connection>scm:git:git@github.com:Jahia/slide-it.git</connection>
+        <developerConnection>scm:git:git@github.com:Jahia/slide-it.git</developerConnection>
+        <url>https://github.com/Jahia/slide-it</url>
     </scm>
+
 
     <repositories>
         <repository>
