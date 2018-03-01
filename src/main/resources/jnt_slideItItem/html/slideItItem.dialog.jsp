@@ -26,7 +26,7 @@
 
 
 <div id="${currentNode.identifier}Dialog" class="dialog${renderContext.editMode? 'edit' : ''} pollSlider">
-    <i class="fa fa-times dismissButton"></i>
+    <div class="dismissButton"><i class="fas fa-times"></i></div>
     <c:if test="${renderContext.editMode}">
         <h4><i class=""fa ${icon}></i> ${currentNode.displayableName}</h4>
     </c:if>
